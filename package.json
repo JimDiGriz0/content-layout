@@ -1,0 +1,21 @@
+{
+  "name": "content-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimDiGriz0/content-layout.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/JimDiGriz0/content-layout/issues"
+  },
+  "homepage": "https://github.com/JimDiGriz0/content-layout#readme"
+}

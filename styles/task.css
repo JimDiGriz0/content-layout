@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --text-main: #cbd5e1;
+  --text-heading: #f8fafc;
+  --accent: #38bdf8;
+  --accent-glow: rgba(56, 189, 248, 0.4);
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --code-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Сброс базовых отступов и настройка фона */
+body {
+  margin: 0;
+  padding: 3rem 1.5rem;
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-main);
+  font-family:
+    'Inter',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Обертка контента, чтобы все было по центру */
+body > * {
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(30, 41, 59, 0.9);
+  color: #38bdf8;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  transition: all 0.2s ease;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.home-btn:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.6);
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.2);
+}
+
+/* Типографика и заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-heading);
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.8rem;
+  background: linear-gradient(to right, #38bdf8, #818cf8);
+  -webkit-background-clip: text; /* Для поддержки в Safari */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid var(--glass-border);
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 2px;
+  width: 50px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: var(--text-heading);
+}
+
+h3 strong {
+  color: var(--accent);
+}
+
+/* Текст и списки */
+p {
+  margin-bottom: 1.2rem;
+}
+
+ul,
+ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.8rem;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+li:hover {
+  transform: translateX(5px);
+  color: var(--text-heading);
+}
+
+li::marker {
+  color: var(--accent);
+}
+
+/* Оформление встроенного и блочного кода */
+code {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.85em;
+  background: var(--code-bg);
+  color: #7dd3fc;
+  padding: 0.2em 0.5em;
+  border-radius: 6px;
+  border: 1px solid var(--glass-border);
+  transition: all 0.2s ease;
+}
+
+code:hover {
+  background: rgba(56, 189, 248, 0.1);
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
+pre {
+  background: var(--code-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  overflow-x: auto;
+  position: relative;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+pre:hover {
+  border-color: var(--accent-glow);
+  box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.2);
+}
+
+/* Окно кода в стиле MacOS (дополнительный декоративный элемент) */
+pre::before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ef4444; /* red */
+  box-shadow:
+    20px 0 0 #f59e0b,
+    40px 0 0 #10b981; /* yellow, green */
+  margin-bottom: 1rem;
+}
+
+pre code {
+  background: transparent;
+  color: #e2e8f0;
+  padding: 0;
+  border: none;
+  font-size: 0.9em;
+}
+
+pre code:hover {
+  background: transparent;
+  border-color: transparent;
+}
+
+/* Изображения */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  margin: 1.5rem 0;
+  display: block;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.15);
+  border-color: var(--accent-glow);
+}
+
+/* Разделители и выделения */
+hr {
+  height: 1px;
+  border: none;
+  background: linear-gradient(to right, transparent, var(--glass-border), transparent);
+  margin: 3rem 0;
+}
+
+strong {
+  color: var(--text-heading);
+  font-weight: 600;
+}
+
+/* Подсветка текста Selection */
+::selection {
+  background: var(--accent-glow);
+  color: #ffffff;
+}

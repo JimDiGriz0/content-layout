@@ -1,0 +1,74 @@
+body {
+  width: 700px;
+  margin: 0 auto;
+  padding: 100px 0;
+
+  font-family: serif;
+
+  background-color: #eee;
+}
+
+.home-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(30, 41, 59, 0.9);
+  color: #38bdf8;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  transition: all 0.2s ease;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.home-btn:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.6);
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.2);
+}
+
+/* BEGIN (write your solution here) */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  color: #646464;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+p {
+  text-align: justify;
+  font-size: 16px;
+  color: #333;
+}
+
+/* END */

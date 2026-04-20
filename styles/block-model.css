@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Roboto;
+  src: url('../fonts/Roboto-Regular.ttf') format(truetype);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f9;
+  font-family: Roboto, sans-serif;
+}
+
+.home-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(30, 41, 59, 0.9);
+  color: #38bdf8;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  transition: all 0.2s ease;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.home-btn:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.6);
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.2);
+}
+
+/* BEGIN (write your solution here) */
+div {
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  /* border: thin solid #ddd; */
+  text-align: center;
+  border-radius: 8px;
+}
+
+img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+/* END */
