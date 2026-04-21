@@ -1,0 +1,131 @@
+html {
+  /* BEGIN */
+  color: #8a94a7;
+  font: 18px/1.5 sans-serif;
+
+  background: #1d2026;
+
+  /* END */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* BEGIN */
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  /* END */
+}
+
+h1,
+h2,
+h3 {
+  /* BEGIN */
+  margin: 0;
+  padding: 1rem 0;
+
+  /* END */
+}
+
+ul {
+  /* BEGIN */
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  /* END */
+}
+
+/* BEGIN */
+
+.card {
+  width: 300px;
+  padding: 2.5rem 2rem;
+
+  background: #2c3039;
+}
+
+.card-list {
+  font-size: 14px;
+}
+
+.price {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.price span {
+  color: #fff;
+  font-size: 3em;
+}
+
+.card h3 {
+  color: #fff;
+  font-size: 0.9em;
+}
+
+/* END */
+
+.btn {
+  display: block;
+  padding: 1em 0;
+
+  color: white;
+
+  /* BEGIN */
+  font-size: 0.7rem;
+
+  /* END */
+
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-blue {
+  background-color: #097dea;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgb(138 148 167 / 24%);
+}
+
+.home-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(30, 41, 59, 0.9);
+  color: #38bdf8;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  transition: all 0.2s ease;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.home-btn:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.6);
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.2);
+}
