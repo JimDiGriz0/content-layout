@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400&family=Marck+Script:wght@400&display=swap');
+
+:root {
+  --font-size: 27px;
+  --line-height: 37.5px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+
+  background-color: #4db6ac;
+}
+
+.notebook {
+  position: relative;
+
+  /* BEGIN (write your solution here) */
+  width: 750px;
+  height: 700px;
+
+  padding-top: 50px;
+
+  box-sizing: border-box;
+
+  /* END */
+
+  word-spacing: 6px;
+
+  background-color: #fff;
+  box-shadow: 4px 6px 16px 3px #009688;
+}
+
+.notebook::before {
+  position: absolute;
+  top: 0;
+  left: 50px;
+
+  width: 2px;
+  height: 100%;
+
+  background-color: #ff5722;
+
+  content: '';
+}
+
+/* BEGIN (write your solution here) */
+.paper {
+  height: 100%;
+
+  padding-left: 60px;
+  padding-right: 60px;
+
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+
+  background-image: repeating-linear-gradient(
+    180deg,
+    #fff,
+    #fff calc(var(--line-height) - 1px),
+    #80cbc4 calc(var(--line-height) - 1px),
+    #80cbc4 var(--line-height)
+  );
+}
+
+.paper pre {
+  margin: 0;
+  padding-top: 10px;
+  font-family: Caveat, sans-serif;
+}
+
+.author {
+  font-family: 'Marck Script', sans-serif;
+  text-align: right;
+}
+
+/* END */
+
+/* Home Button */
+.home-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(30, 41, 59, 0.9);
+  color: #38bdf8;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  transition: all 0.2s ease;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.home-btn:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.6);
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.2);
+}

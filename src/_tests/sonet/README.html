@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сонет - Испытание</title>
+    <!-- Подключаем общий стиль для заданий -->
+    <link rel="stylesheet" href="../../../styles/task.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="task-header">
+        <h1>Sonet / Сонет</h1>
+        <a href="../../../index.html#sonet" class="home-btn"><span>←</span> На главную</a>
+      </header>
+
+      <main class="task-content">
+        <p>В этом испытании вам предстоит реализовать вёрстку 85 сонета Уильяма Шекспира в виде рукописного текста на листке бумаги. Вся вёрстка уже готова в файле index.html. Ваша задача — создать стили бумаги с помощью градиента</p>
+
+        <p><img src="./images/sonet.png" alt="Сонет Шекспира на CSS" title="Сонет Шекспира на CSS"></p>
+
+        <h2><strong>Задание</strong></h2>
+
+        <p>Подключите шрифты <code>Caveat</code> и <code>Marck Script</code>.</p>
+
+        <h3><strong>Блок notebook</strong></h3>
+
+        <ul>
+          <li>Размеры: <code>750</code> (ширина) на <code>700</code> (высота) пикселей</li>
+          <li>Внутренний отступ сверху: <code>50</code> пикселей. Отступ не должен увеличивать размер блока</li>
+        </ul>
+
+        <h3><strong>Блок paper</strong></h3>
+
+        <ul>
+          <li>Блок занимает всю доступную высоту</li>
+          <li>Внутренние отступы: по <code>60</code> пикселей слева и справа</li>
+          <li>Размер шрифта и межстрочный интервал находятся в соответствующих переменных</li>
+          <li>Блок имеет градиент, имитирующий полоски тетради. Градиент состоит из двух цветов: белый <code>#ffffff</code> и зелёный <code>#80cbc4</code>. Подумайте, как создать полосы с помощью точек остановки</li>
+        </ul>
+
+        <h3><strong>pre</strong></h3>
+
+        <ul>
+          <li>Внешние отступы: 0</li>
+          <li>Внутренний отступ сверху: 10 пикселей</li>
+          <li>Шрифт: <code>Caveat</code></li>
+        </ul>
+
+        <h3><strong>Блок author</strong></h3>
+
+        <ul>
+          <li>Шрифт: <code>Marck Script</code></li>
+          <li>Выравнивание текста: по правому краю</li>
+        </ul>
+
+        <h3><strong>Подсказки</strong></h3>
+
+        <ul>
+          <li>Точки остановки градиента имеют прямую зависимость от межстрочного интервала. Размер зелёной линии: 1 пиксель</li>
+          <li>Браузер Firefox, для корректного отображения, требует наличие свойства <code>background-size</code>. Тесты проходят в браузере Chrome, где это свойство не требуется. Поэтому лучше проходить задание именно в этом браузере</li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/calc">Calc()</a></li>
+        </ul>
+      </main>
+    </div>
+  </body>
+</html>

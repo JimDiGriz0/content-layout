@@ -17,7 +17,7 @@
         <h2 class="section-title">Задачи</h2>
         <section class="tasks-grid">
           <!-- Карточка одной задачи (в будущем можно будет копировать этот блок для новых задач) -->
-          <div class="task-card">
+          <div class="task-card" id="block-model">
             <h2>Block model / Блочная модель</h2>
             <p class="task-desc">
               Создание карточки профиля с изображением, заголовком и текстом.
@@ -41,7 +41,7 @@
             </div>
           </div>
 
-          <div class="task-card">
+          <div class="task-card" id="text-styles">
             <h2>Text styles / Стили текста</h2>
             <p class="task-desc">Создание верстки книжной страницы</p>
 
@@ -63,7 +63,7 @@
             </div>
           </div>
 
-          <div class="task-card">
+          <div class="task-card" id="fonts">
             <h2>Fonts / Шрифты</h2>
             <p class="task-desc">
               Создание верстки журнальной страницы, подключение шрифтов
@@ -87,7 +87,7 @@
             </div>
           </div>
 
-          <div class="task-card">
+          <div class="task-card" id="lists">
             <h2>Lists / Списки</h2>
             <p class="task-desc">
               Разметка текстовых списков различного уровня: маркированные, нумерованные и
@@ -112,7 +112,7 @@
             </div>
           </div>
 
-          <div class="task-card">
+          <div class="task-card" id="columns">
             <h2>Columns / Колонки</h2>
             <p class="task-desc">
               Верстка макета с использованием CSS Columns для создания колоночного текста
@@ -137,7 +137,7 @@
             </div>
           </div>
 
-          <div class="task-card">
+          <div class="task-card" id="units">
             <h2>Units / Единицы измерения</h2>
             <p class="task-desc">
               Использование относительных единиц измерения (em, rem) на примере карточки
@@ -162,7 +162,7 @@
             </div>
           </div>
 
-          <div class="task-card">
+          <div class="task-card" id="mediaelements">
             <h2>MediaElements / Медиаэлементы</h2>
             <p class="task-desc">
               Встраивание изображений и видео в HTML-документ, работа с медиаэлементами.
@@ -186,7 +186,7 @@
             </div>
           </div>
 
-          <div class="task-card">
+          <div class="task-card" id="tables">
             <h2>Tables / Таблицы</h2>
             <p class="task-desc">
               Верстка таблицы списка дел с использованием rowspan и colspan, а также
@@ -211,7 +211,7 @@
             </div>
           </div>
 
-          <div class="task-card">
+          <div class="task-card" id="forms">
             <h2>Forms / Формы</h2>
             <p class="task-desc">
               Создание формы обратной связи по заданному макету сайта.
@@ -234,7 +234,7 @@
               </a>
             </div>
           </div>
-          <div class="task-card">
+          <div class="task-card" id="selectors">
             <h2>Selectors / Селекторы</h2>
             <p class="task-desc">
               Использование CSS селекторов для стилизации различных элементов страницы со
@@ -259,7 +259,7 @@
             </div>
           </div>
 
-          <div class="task-card">
+          <div class="task-card" id="pseudo-classes">
             <h2>Pseudo-classes / Псевдоклассы</h2>
             <p class="task-desc">
               Использование псевдоклассов для стилизации шахматной доски.
@@ -286,7 +286,7 @@
             </div>
           </div>
 
-          <div class="task-card">
+          <div class="task-card" id="pseudo-elements">
             <h2>Pseudo-elements / Псевдоэлементы</h2>
             <p class="task-desc">
               Использование псевдоэлементов для стилизации карточек профилей.
@@ -315,10 +315,11 @@
               </a>
             </div>
           </div>
-          <div class="task-card">
+          <div class="task-card" id="overflow">
             <h2>Overflow / Переполнение</h2>
             <p class="task-desc">
-              Управление переполнением контента, обрезка текста с многоточием и вертикальная прокрутка.
+              Управление переполнением контента, обрезка текста с многоточием и
+              вертикальная прокрутка.
             </p>
 
             <div class="task-links">
@@ -338,11 +339,215 @@
               </a>
             </div>
           </div>
+          <div class="task-card" id="variables">
+            <h2>Variables / Переменные</h2>
+            <p class="task-desc">
+              Использование CSS переменных (custom properties) для настройки тем
+              оформления.
+            </p>
+
+            <div class="task-links">
+              <a href="./src/variables/README.html" class="link-btn primary">
+                <span class="icon">📝</span>
+                <span>Задание и теория</span>
+              </a>
+
+              <a href="./src/variables/variables.html" class="link-btn secondary">
+                <span class="icon">💻</span>
+                <span>Моё решение</span>
+              </a>
+
+              <a href="./S/variables/variablesS.html" class="link-btn tertiary">
+                <span class="icon">✨</span>
+                <span>Решение наставника</span>
+              </a>
+            </div>
+          </div>
+          <div class="task-card" id="background-image">
+            <h2>Background image / Фоновое изображение</h2>
+            <p class="task-desc">
+              Использование свойства background-image для стилизации элементов.
+            </p>
+
+            <div class="task-links">
+              <a href="./src/background-image/README.html" class="link-btn primary">
+                <span class="icon">📝</span>
+                <span>Задание и теория</span>
+              </a>
+
+              <a
+                href="./src/background-image/background-image.html"
+                class="link-btn secondary"
+              >
+                <span class="icon">💻</span>
+                <span>Моё решение</span>
+              </a>
+
+              <a
+                href="./S/background-image/background-imageS.html"
+                class="link-btn tertiary"
+              >
+                <span class="icon">✨</span>
+                <span>Решение наставника</span>
+              </a>
+            </div>
+          </div>
+          <div class="task-card" id="gradient">
+            <h2>Gradient / Градиент</h2>
+            <p class="task-desc">
+              Использование градиентов для создания паттернов и фонов.
+            </p>
+
+            <div class="task-links">
+              <a href="./src/gradient/README.html" class="link-btn primary">
+                <span class="icon">📝</span>
+                <span>Задание и теория</span>
+              </a>
+
+              <a href="./src/gradient/gradient.html" class="link-btn secondary">
+                <span class="icon">💻</span>
+                <span>Моё решение</span>
+              </a>
+
+              <a href="./S/gradient/gradientS.html" class="link-btn tertiary">
+                <span class="icon">✨</span>
+                <span>Решение наставника</span>
+              </a>
+            </div>
+          </div>
         </section>
 
         <h2 class="section-title">Испытания</h2>
         <section class="tasks-grid">
-          <!-- Карточки испытаний со звездочкой будут здесь -->
+          <!-- Карточка испытания -->
+          <div class="task-card test-card" id="calculator">
+            <h2>Calculator / Калькулятор</h2>
+            <p class="task-desc">
+              Комплексное испытание: верстка интерфейса калькулятора с использованием
+              множественных колонок и кастомных шрифтов.
+            </p>
+
+            <div class="task-links">
+              <a href="./src/_tests/calculator/README.html" class="link-btn primary">
+                <span class="icon">📝</span>
+                <span>Задание и теория</span>
+              </a>
+
+              <a
+                href="./src/_tests/calculator/calculator.html"
+                class="link-btn secondary"
+              >
+                <span class="icon">💻</span>
+                <span>Моё решение</span>
+              </a>
+
+              <a href="./S/_tests/calculator/calculatorS.html" class="link-btn tertiary">
+                <span class="icon">✨</span>
+                <span>Решение наставника</span>
+              </a>
+            </div>
+          </div>
+          <div class="task-card test-card" id="terminal">
+            <h2>Terminal / Терминал</h2>
+            <p class="task-desc">
+              Верстка интерфейса консоли MacOS: кастомные шрифты, скругления,
+              использование тегов pre и code.
+            </p>
+
+            <div class="task-links">
+              <a href="./src/_tests/terminal/README.html" class="link-btn primary">
+                <span class="icon">📝</span>
+                <span>Задание и теория</span>
+              </a>
+
+              <a href="./src/_tests/terminal/terminal.html" class="link-btn secondary">
+                <span class="icon">💻</span>
+                <span>Моё решение</span>
+              </a>
+
+              <a href="./S/_tests/terminal/terminal.html" class="link-btn tertiary">
+                <span class="icon">✨</span>
+                <span>Решение наставника</span>
+              </a>
+            </div>
+          </div>
+          <div class="task-card test-card" id="sonet">
+            <h2>Sonet / Сонет</h2>
+            <p class="task-desc">
+              Верстка сонета Шекспира: нестандартные рукописные шрифты, тетрадный лист на
+              CSS с помощью градиентов.
+            </p>
+
+            <div class="task-links">
+              <a href="./src/_tests/sonet/README.html" class="link-btn primary">
+                <span class="icon">📝</span>
+                <span>Задание и теория</span>
+              </a>
+
+              <a href="./src/_tests/sonet/sonet.html" class="link-btn secondary">
+                <span class="icon">💻</span>
+                <span>Моё решение</span>
+              </a>
+
+              <a href="./S/_tests/sonet/sonetS.html" class="link-btn tertiary">
+                <span class="icon">✨</span>
+                <span>Решение наставника</span>
+              </a>
+            </div>
+          </div>
+          <div class="task-card test-card" id="tab-content">
+            <h2>Tab Content / Вкладки</h2>
+            <p class="task-desc">
+              Реализация функциональных вкладок на чистом CSS без JavaScript.
+              Использование псевдоклассов и селекторов.
+            </p>
+
+            <div class="task-links">
+              <a href="./src/_tests/tab-content/README.html" class="link-btn primary">
+                <span class="icon">📝</span>
+                <span>Задание и теория</span>
+              </a>
+
+              <a
+                href="./src/_tests/tab-content/tab-content.html"
+                class="link-btn secondary"
+              >
+                <span class="icon">💻</span>
+                <span>Моё решение</span>
+              </a>
+
+              <a
+                href="./S/_tests/tab-content/tab-contentS.html"
+                class="link-btn tertiary"
+              >
+                <span class="icon">✨</span>
+                <span>Решение наставника</span>
+              </a>
+            </div>
+          </div>
+          <div class="task-card test-card" id="calendar">
+            <h2>Calendar / Календарь</h2>
+            <p class="task-desc">
+              Верстка интерфейса календаря с расписанием: таблицы, списки, работа со шрифтами и отступами.
+            </p>
+
+            <div class="task-links">
+              <a href="./src/_tests/calendar/README.html" class="link-btn primary">
+                <span class="icon">📝</span>
+                <span>Задание и теория</span>
+              </a>
+
+              <a href="./src/_tests/calendar/calendar.html" class="link-btn secondary">
+                <span class="icon">💻</span>
+                <span>Моё решение</span>
+              </a>
+
+              <a href="./S/_tests/calendar/calendarS.html" class="link-btn tertiary">
+                <span class="icon">✨</span>
+                <span>Решение наставника</span>
+              </a>
+            </div>
+          </div>
         </section>
       </main>
     </div>

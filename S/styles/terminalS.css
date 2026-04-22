@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrainsMono:wght@400&display=swap');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+
+  background: #7e57c2;
+}
+
+/* BEGIN */
+
+.terminal {
+  padding: 20px 30px;
+
+  color: #fff;
+
+  background: #263238;
+  border-radius: 5px;
+}
+
+.terminal-header {
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 11px;
+  height: 11px;
+  margin-right: 5px;
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+}
+
+.btn-red {
+  background: #ff5f56;
+}
+
+.btn-yellow {
+  background: #ffbd2e;
+}
+
+.btn-green {
+  background: #27c93f;
+}
+
+.terminal-body pre {
+  margin: 0;
+}
+
+.terminal-body code {
+  font:
+    18px/1.5 'JetBrains Mono',
+    monospace;
+}
+
+.code-tag {
+  color: #ff5370;
+}
+
+.code-attr {
+  color: #ffcb6b;
+}
+
+.code-string {
+  color: #c3e88d;
+}
+
+/* END */
+
+/* Home Button */
+.home-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(30, 41, 59, 0.9);
+  color: #38bdf8;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  transition: all 0.2s ease;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.home-btn:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.6);
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.2);
+}

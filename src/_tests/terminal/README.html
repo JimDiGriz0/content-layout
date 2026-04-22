@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Терминал - Испытание</title>
+    <!-- Подключаем общий стиль для заданий -->
+    <link rel="stylesheet" href="../../../styles/task.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="task-header">
+        <h1>Terminal / Терминал</h1>
+        <a href="../../../index.html#terminal" class="home-btn"
+          ><span>←</span> На главную</a
+        >
+      </header>
+
+      <main class="task-content">
+        <p>
+          В этом испытании вы реализуете терминал с кодом и проработаете навыки работы с
+          тегом <code>&lt;pre&gt;</code>.
+        </p>
+
+        <p>
+          <img
+            src="./images/terminal.png"
+            alt="Терминал на CSS"
+            title="Терминал на CSS"
+          />
+        </p>
+
+        <h2><strong>Стили</strong></h2>
+
+        <h3><strong>Терминал</strong></h3>
+
+        <ul>
+          <li>
+            Внутренние отступы: <code>20 пикселей</code> по вертикали и
+            <code>30 пикселей</code> по горизонтали
+          </li>
+          <li>Цвет текста: <code>белый</code></li>
+          <li>Цвет фона: <code>#263238</code></li>
+          <li>
+            Закругление: <code>5 пикселей</code>. Для закругления используйте свойство
+            <code>border-radius</code>
+          </li>
+        </ul>
+
+        <h3><strong>Шапка</strong></h3>
+
+        <p>Внутри шапки терминала содержится три круглые кнопки с разными цветами.</p>
+
+        <ul>
+          <li>Закругление: <code>50%</code></li>
+          <li>Высота и ширина: <code>11px</code></li>
+          <li>Отступ справа: <code>5px</code></li>
+          <li>Внешний отступ снизу: <code>20px</code></li>
+          <li>
+            Перед написанием стилей для кнопок сбросьте свойства <code>border</code> и
+            <code>padding</code> для них
+          </li>
+        </ul>
+
+        <p><strong>Цвета кнопок</strong>:</p>
+
+        <ul>
+          <li>Красный: <code>#ff5f56</code></li>
+          <li>Желтый: <code>#ffbd2e</code></li>
+          <li>Зелёный: <code>#27c93f</code></li>
+        </ul>
+
+        <h3><strong>Код</strong></h3>
+
+        <ul>
+          <li>Для тега <code>pre</code> сбросьте стандартные внешние отступы</li>
+          <li>
+            Для тега <code>code</code> установите следующие стили:
+            <ul>
+              <li>Размер шрифта: <code>18px</code></li>
+              <li>Межстрочный интервал: <code>1.5</code></li>
+              <li>Шрифт: JetBrains Mono. Семейство шрифтов: monospace</li>
+            </ul>
+          </li>
+        </ul>
+
+        <p>Каждый логический элемент внутри кода имеет своё цветовое выделение:</p>
+
+        <ul>
+          <li>Тег: <code>#ff5370</code></li>
+          <li>Атрибут: <em>#ffcb6b</em></li>
+          <li>Значение атрибута: <em>#c3e88d</em></li>
+        </ul>
+
+        <h3><strong>Вёрстка «кода»</strong></h3>
+
+        <p>Используйте следующую конструкцию для получения отформатированного кода:</p>
+
+        <pre><code><span class="code-tag">&lt;section</span> <span class="code-attr">class</span>=&quot;<span class="code-string">card</span>&quot;<span class="code-tag">&gt;</span>
+  <span class="code-tag">&lt;h1&gt;</span>Nike Air Max<span class="code-tag">&lt;/h1&gt;</span>
+  <span class="code-tag">&lt;img</span> <span class="code-attr">src</span>=&quot;<span class="code-string">./images/airmax2020.png</span>&quot; <span class="code-attr">alt</span>=&quot;<span class="code-string">Nike Air Max</span>&quot;<span class="code-tag">&gt;</span>
+  <span class="code-tag">&lt;button&gt;</span>Купить<span class="code-tag">&lt;/button&gt;</span>
+<span class="code-tag">&lt;/section&gt;</span></code></pre>
+
+        <p>
+          Здесь вы можете увидеть несколько различных мнемоник. Их полезно знать, так как
+          они часто используются при создании веб-приложений.
+        </p>
+
+        <ul>
+          <li>
+            <code>&amp;lt;</code> — знак «меньше». Он используется при открытии тега.
+          </li>
+          <li><code>&amp;gt;</code> — знак больше. Он используется при закрытии тега.</li>
+          <li><code>&amp;quot;</code> — двойные кавычки.</li>
+        </ul>
+
+        <p>
+          Важно сохранить форматирование. Попробуйте поиграться с этой частью кода и
+          посмотрите, как это отобразится в браузере.
+        </p>
+
+        <h3><strong>Подсказки</strong></h3>
+
+        <ul>
+          <li>
+            <code>&lt;pre&gt;</code> — тег для вставки отформатированного текста.
+            Подробнее можно прочитать на
+            <a href="https://ru.code-basics.com/languages/html/lessons/pre"
+              >Code Basics</a
+            >
+          </li>
+          <li>Внешний отступ снизу необходимо создать у шапки, но не у каждой кнопки</li>
+        </ul>
+      </main>
+    </div>
+  </body>
+</html>

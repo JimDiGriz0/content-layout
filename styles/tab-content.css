@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 50px;
+
+  color: #eee;
+
+  /* BEGIN */
+  font:
+    20px/1.5 Raleway,
+    sans-serif;
+
+  /* END */
+
+  background-image: linear-gradient(
+    to right top,
+    #222831,
+    #282d36,
+    #2d333b,
+    #333841,
+    #393e46
+  );
+}
+
+img {
+  max-width: 100%;
+
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  color: #00adb5;
+  font-size: 1.5em;
+}
+
+.tabs {
+  width: 1024px;
+  margin: 0 auto;
+
+  /* BEGIN */
+  columns: 3;
+  column-gap: 0;
+
+  /* END */
+}
+
+/* BEGIN */
+
+.tab-name {
+  display: block;
+  padding: 20px;
+
+  break-inside: avoid;
+
+  text-align: center;
+  text-decoration: none;
+
+  background: #00adb5;
+}
+
+.tab-name:hover,
+.tab-name:focus {
+  border-bottom: 3px solid #5ffbf1;
+}
+
+.tabs-content {
+  column-span: all;
+
+  background: #393e46;
+}
+
+.tabs-content-item {
+  padding: 20px;
+
+  columns: 3;
+  column-gap: 30px;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+[data-tab='html']:hover ~ .tabs-content [data-tab-content='html'],
+[data-tab='html']:focus ~ .tabs-content [data-tab-content='html'],
+[data-tab='css']:hover ~ .tabs-content [data-tab-content='css'],
+[data-tab='css']:focus ~ .tabs-content [data-tab-content='css'],
+[data-tab='js']:hover ~ .tabs-content [data-tab-content='js'],
+[data-tab='js']:focus ~ .tabs-content [data-tab-content='js'] {
+  display: block;
+}
+
+/* END */
+
+.span-all {
+  column-span: all;
+}
+
+/* Home Button */
+.home-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: rgba(30, 41, 59, 0.9);
+  color: #38bdf8;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  transition: all 0.2s ease;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.home-btn:hover {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: rgba(56, 189, 248, 0.6);
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.2);
+}
