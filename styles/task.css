@@ -11,7 +11,7 @@
   --code-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* Сброс базовых отступов и настройка фона */
+/* сброс отступов */
 body {
   margin: 0;
   padding: 3rem 1.5rem;
@@ -28,13 +28,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Обертка контента, чтобы все было по центру */
+/* обертка контента */
 body > * {
   max-width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* кнопка "на главную" */
 .home-btn {
   position: fixed;
   top: 20px;
@@ -65,7 +66,7 @@ body > * {
   box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.2);
 }
 
-/* Типографика и заголовки */
+/* заголовки */
 h1,
 h2,
 h3,
@@ -116,7 +117,7 @@ h3 strong {
   color: var(--accent);
 }
 
-/* Текст и списки */
+/* параграфы и списки */
 p {
   margin-bottom: 1.2rem;
 }
@@ -143,7 +144,7 @@ li::marker {
   color: var(--accent);
 }
 
-/* Оформление встроенного и блочного кода */
+/* блочный код */
 code {
   font-family: 'Fira Code', monospace;
   font-size: 0.85em;
@@ -180,7 +181,7 @@ pre:hover {
   box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.2);
 }
 
-/* Окно кода в стиле MacOS (дополнительный декоративный элемент) */
+/* окно кода макОС */
 pre::before {
   content: '';
   display: block;
@@ -207,7 +208,7 @@ pre code:hover {
   border-color: transparent;
 }
 
-/* Изображения */
+/* images */
 img {
   max-width: 100%;
   height: auto;
@@ -228,7 +229,7 @@ img:hover {
   border-color: var(--accent-glow);
 }
 
-/* Разделители и выделения */
+/* разделители */
 hr {
   height: 1px;
   border: none;
@@ -241,7 +242,7 @@ strong {
   font-weight: 600;
 }
 
-/* Подсветка текста Selection */
+/* выделение */
 ::selection {
   background: var(--accent-glow);
   color: #ffffff;

@@ -63,6 +63,7 @@ img {
   font-weight: bold;
 }
 
+/* кнопка "на главую" */
 .home-btn {
   position: fixed;
   top: 20px;

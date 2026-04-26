@@ -9,6 +9,8 @@ body {
 }
 
 /* BEGIN */
+
+/* кнопка "на главую" */
 .home-btn {
   position: fixed;
   top: 20px;

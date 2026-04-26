@@ -8,6 +8,7 @@ body {
   background-color: #eee;
 }
 
+/* кнопка "на главную" */
 .home-btn {
   position: fixed;
   top: 20px;

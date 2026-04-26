@@ -79,6 +79,7 @@ p {
   color: #ced4d9;
 }
 
+/* кнопка "на главую" */
 .home-btn {
   position: fixed;
   top: 20px;

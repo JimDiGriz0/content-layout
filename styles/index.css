@@ -27,14 +27,14 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Контейнер для центрирования */
+/* контейнер за центрирования */
 .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
 
-/* Шапка главной страницы */
+/* хедер */
 .main-header {
   text-align: center;
   margin-bottom: 4rem;
@@ -58,7 +58,7 @@ body {
   font-weight: 300;
 }
 
-/* Заголовки разделов (Задачи, Испытания) */
+/* заголовки */
 .section-title {
   font-size: 1.8rem;
   color: var(--text-heading);
@@ -70,10 +70,10 @@ body {
   padding-bottom: 1rem;
 }
 .section-title:first-of-type {
-  margin-top: 0; /* Убираем огромный отступ сверху у первого заголовка */
+  margin-top: 0;
 }
 
-/* Сетка карточек */
+/* карточки грид */
 .tasks-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -81,7 +81,7 @@ body {
   perspective: 1000px;
 }
 
-/* Стилизация карточки с заданием (эффект матового стекла) */
+/* стилизация карточки */
 .task-card {
   background: var(--bg-card);
   backdrop-filter: blur(16px);
@@ -105,7 +105,7 @@ body {
   box-shadow: 0 20px 40px -10px rgba(56, 189, 248, 0.2);
 }
 
-/* Специальный дизайн для карточек испытаний */
+/* дизайн карточек испытаний */
 .test-card {
   background: rgba(139, 92, 246, 0.05);
   border: 1px solid rgba(139, 92, 246, 0.3);
@@ -135,19 +135,18 @@ body {
 .task-desc {
   color: #94a3b8;
   font-size: 0.9rem;
-  margin-bottom: 1.5rem; /* Уменьшил отступ над кнопками (было 2rem) */
+  margin-bottom: 1.5rem;
   line-height: 1.5;
-  flex-grow: 1; /* Чтобы кнопки всегда прижимались к низу карточки */
+  flex-grow: 1;
 }
 
-/* Группа кнопок */
+/* кнопки */
 .task-links {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
 }
 
-/* Универсальные стили для красивых кнопок-ссылок */
 .link-btn {
   display: flex;
   align-items: center;
@@ -165,7 +164,7 @@ body {
   font-size: 1.2rem;
 }
 
-/* 1. Кнопка "Задание и теория" - Синяя */
+/* кнопка "задания" */
 .link-btn.primary {
   background: rgba(56, 189, 248, 0.08);
   color: #38bdf8;
@@ -176,7 +175,7 @@ body {
   transform: translateX(5px);
 }
 
-/* 2. Кнопка "Моё решение" - Фиолетовая */
+/* кнопка "мое решение"*/
 .link-btn.secondary {
   background: rgba(129, 140, 248, 0.08);
   color: #818cf8;
@@ -187,7 +186,7 @@ body {
   transform: translateX(5px);
 }
 
-/* 3. Кнопка "Решение наставника" - Изумрудная */
+/* 3. кнопка "решение наставника" */
 .link-btn.tertiary {
   background: rgba(16, 185, 129, 0.08);
   color: #34d399;

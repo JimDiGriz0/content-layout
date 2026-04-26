@@ -94,6 +94,7 @@ h3 {
   border-bottom: 1px solid rgb(138 148 167 / 24%);
 }
 
+/* кнопка "на главную" */
 .home-btn {
   position: fixed;
   top: 20px;

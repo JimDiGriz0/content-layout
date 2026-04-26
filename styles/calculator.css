@@ -30,11 +30,6 @@ p {
   text-align: right;
 }
 
-/* div p {
-  padding-top: 5px;
-  margin: 0;
-} */
-
 .btn-line {
   column-count: 4;
   column-gap: 0;
@@ -79,7 +74,7 @@ button:hover {
   color: #ced4d9;
 }
 
-/* Home Button */
+/* кнопка "на главую" */
 .home-btn {
   position: fixed;
   top: 20px;
